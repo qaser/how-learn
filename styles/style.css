@@ -10,16 +10,112 @@
 }
 
 .header {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
 }
 
+.header__logo {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  width: 183px;
+  height: 32px;
+}
+
+.header__title {
+  margin-left: 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bolder;
+  /* text-decoration: double; */
+  z-index: 2;
+  width: 730px;
+}
+
+.header__subtitle {
+  line-height: 25px;
+  font-size: 18px;
+  color: #10191E;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  width: 388px;
+  z-index: 2;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.header__link::after {
+  /* спецсимвол стрелки */
+  content: " \2192";
+}
+
+.header__main-illustration {
+  height: 608px;
+  width: 765px;
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  position: absolute;
+  right: 0px;
+  top: 64px;
+  z-index: 0;
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+}
+
+.description {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  /* background-color: yellow; */
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  /* background-color: green; */
+}
+
+.two-columns__brief {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  width: 175px;
+  /* background-color: #2f80ed; */
+}
+
+.two-columns__main-text {
+  line-height: 34px;
+  font-size: 24px;
+  min-width: 784px;
+  width: 80%;
+  /* background-color: red; */
+}
+
+.two-columns__span-accent{
+  /* высоты шрифта и строки наследуются */
+  font-weight: bolder;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* и элемента с модификатором вида ключ-значение */

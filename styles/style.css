@@ -22,11 +22,15 @@
   max-height: 756px;
 }
 
-.header__logo {
+.logo {
+  width: 183px;
+}
+
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
-  width: 183px;
+  /* width: 183px; */
   height: 32px;
 }
 
@@ -42,7 +46,7 @@
 .header__subtitle {
   line-height: 25px;
   font-size: 18px;
-  color: #10191E;
+  color: #000000;
   position: absolute;
   bottom: 30px;
   left: 64px;
@@ -106,7 +110,8 @@
   width: 80%;
 }
 
-.two-columns__central-paragraph {
+/* каждый второй параграф будет с отступом */
+.two-columns__paragraph:nth-child(2n) {
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -220,7 +225,7 @@
   content: " \2192";
 }
 
-.feynman_img {
+.feynman__image {
   width: 867px;
   height: 637px;
   position: absolute;
@@ -284,7 +289,7 @@
 
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
-  width: 183px;
+  /* width: 183px; */
   height: 35px;
 }
 

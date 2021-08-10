@@ -1,7 +1,8 @@
-/* обнуление отступов */
-* {
+/* обнуление отступов для неупорядоченных списков*/
+.list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
  }
 
 .page {
@@ -30,17 +31,19 @@
   position: absolute;
   top: 30px;
   left: 64px;
-  /* width: 183px; */
   height: 32px;
 }
 
 .header__title {
   margin-left: 64px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bolder;
   z-index: 2;
-  width: 730px;
+  max-width: 730px;
+  width: 100%;
 }
 
 .header__subtitle {
@@ -50,7 +53,7 @@
   position: absolute;
   bottom: 30px;
   left: 64px;
-  width: 388px;
+  max-width: 388px;
   z-index: 2;
 }
 
@@ -96,6 +99,7 @@
 }
 
 .two-columns__brief {
+  margin: 0 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -108,6 +112,10 @@
   font-size: 24px;
   min-width: 784px;
   width: 80%;
+}
+
+.two-columns__paragraph {
+  margin: 0 0;
 }
 
 /* каждый второй параграф будет с отступом */
@@ -156,28 +164,20 @@
 }
 
 .table__cell {
-  margin-top: 60px; /* во флексе не рекомендуют выставлять отступы,
-  но я не нашел решения лучше */
+  margin-top: 60px;
   width: 250px;
   height: auto;
 }
 
 .table__heading {
   margin-top: 0px;
-  margin-bottom: 20px;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bolder;
 }
 
 .table__text {
-  margin-bottom: 20px;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.table__footer {
+  margin-top: 20px;
   margin-bottom: 0px;
   line-height: 1.2;
   font-size: 18px;
@@ -189,7 +189,7 @@
   position: relative;
   margin-top: 100px;
   padding-top: 100px;
-  height: 790px;
+  min-height: 790px;
   z-index: 0;
 }
 
@@ -245,13 +245,15 @@
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
   top: 0px;
   right: -210px;
   z-index: -1;
   width: 877px;
   height: 877px;
-  overflow: hidden;
 }
 
 .table__cell_theme_dark {
@@ -260,9 +262,13 @@
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
   background-color: #1f1f1f;
   min-height: 350px;
-  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: stretch; /* растянем блоки по размеру footer */
 }
 
 .footer__columns {
@@ -272,14 +278,14 @@
   margin-left: auto;
   margin-right: auto;
   color: white;
-  position: absolute;
-  bottom: 40px;
-  top: 0px;
-  left: 0px;
-  right: 0px;
 }
 
-.footer__column_content-copyright {
+.footer__column {
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
@@ -289,7 +295,6 @@
 
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
-  /* width: 183px; */
   height: 35px;
 }
 
@@ -299,14 +304,10 @@
   margin: 18px 0px;
 }
 
-.footer__column_content-info {
-  line-height: 30px;
-  font-size: 18px;
-}
-
 .footer__column-heading {
   margin-bottom: 20px;
   font-weight: bolder;
+  margin-top: 0px;
 }
 
 .footer__column-links {
@@ -315,12 +316,13 @@
   margin-bottom: 16px;
 }
 
-.footer__column_link {
+.footer__column-link {
   text-decoration: none;
   color: white;
 }
 
-.footer__column_content-social {
-  line-height: 30px;
-  font-size: 18px;
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }

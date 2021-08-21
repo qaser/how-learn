@@ -1,0 +1,6 @@
+.two-columns__span-accent{
+  /* высоты шрифта и строки наследуются */
+  font-weight: bolder;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

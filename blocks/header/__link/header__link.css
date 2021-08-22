@@ -1,9 +1,14 @@
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+  transition: opacity .4s ease-out .1s;
 }
 
 .header__link::after {
   /* спецсимвол стрелки */
   content: " \2192";
+}
+
+.header__link:hover {
+  opacity: 70%;
 }

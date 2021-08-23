@@ -1,0 +1,9 @@
+.cards__item {
+  width: 240px;
+  margin-right: 100px;
+}
+
+/* каждый третий элемент будет с нулевым отступом */
+.cards__item:nth-child(3n) {
+  margin-right: 0;
+}

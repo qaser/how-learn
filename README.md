@@ -1,7 +1,7 @@
-# Project How-to-learn (Yandex.Praktikum)
+# Проект "Как учиться" (Яндекс.Практикум)
 
-This project was implemented to teach basic web page layout skills during the training course "Web Developer" Yandex.Praktikum
+Этот проект был реализован для обучения базовым навыкам верстки веб-страниц во время учебного курса "Веб-разработчик" на платформе Яндекс.Практикум
 
-## Author
+## Автор
 
-* **Alexey Saygin** - [GitHub](https://github.com/qaser) | [DockerHub](https://hub.docker.com/r/dangerexit/)
+* **Алексей Сайгин** - [GitHub](https://github.com/qaser) | [DockerHub](https://hub.docker.com/r/dangerexit/)

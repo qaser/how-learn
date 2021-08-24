@@ -2,7 +2,6 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="./vendor/normalize.css">
   <link rel="stylesheet" href="./pages/index.css">
   <link type="image/x-icon" rel="shortcut icon" href="./images/favicon.ico">
   <title>Научиться учиться</title>
@@ -49,27 +48,27 @@
         <p class="section-subtitle">Пять практик от Барбары Оакли</p>
         <ul class="cards list">
           <li class="cards__item">
-            <img class="cards__image" src="images/cards-attention.png" alt="Внимание">
+            <img class="cards__image" src="images/cards-attention.jpg" alt="Внимание">
             <h3 class="cards__title">Два вида внимания</h3>
             <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p>
           </li>
           <li class="cards__item">
-            <img class="cards__image" src="images/cards-recall.png" alt="Воспоминания">
+            <img class="cards__image" src="images/cards-recall.jpg" alt="Воспоминания">
             <h3 class="cards__title">Recall</h3>
             <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
           </li>
           <li class="cards__item">
-            <img class="cards__image" src="images/cards-interliving.png" alt="Интерливинг">
+            <img class="cards__image" src="images/cards-interliving.jpg" alt="Интерливинг">
             <h3 class="cards__title">Интерливинг</h3>
             <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
           </li>
           <li class="cards__item">
-            <img class="cards__image" src="images/cards-question.png" alt="Вопросы">
+            <img class="cards__image" src="images/cards-question.jpg" alt="Вопросы">
             <h3 class="cards__title">Вопросы</h3>
             <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
           </li>
           <li class="cards__item">
-            <img class="cards__image" src="images/cards-competence.png" alt="Иллюзия компетентности">
+            <img class="cards__image" src="images/cards-competence.jpg" alt="Иллюзия компетентности">
             <h3 class="cards__title">Иллюзия компетентности</h3>
             <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
           </li>
@@ -157,15 +156,15 @@
 
       <section class="khan" id="khan">
         <div class="khan__container">
-          <h3 class="khan__author">Салман Хан</h3>
+          <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир — школа</h2>
-          <p class="khan__quote">
+          <blockquote class="khan__quote">
             Страсть и новаторство Сала Хана меняют процесс обучения
             миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем,
             кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания,
             которые приносят успех в школе, карьере и жизни.
-          </p>
-          <p class="khan__quote-author">Джордж Лукас</p>
+          </blockquote>
+          <figcaption class="khan__quote-author">Джордж Лукас</figcaption>
           <p class="khan__quote-author-sublime">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img class="khan__book-pic" src="./images/khan-book.jpg" alt="Обложка книги">
@@ -225,20 +224,27 @@
       <section class="resources" id="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-        <div class="resources__logo-zone">
-          <a href="https://arzamas.academy/" target="_blank">
-            <img class="resources__logo" src="images/logo/resources-arzamas.svg" alt="Arzamas лого">
-          </a>
-          <a href="https://nplus1.ru/" target="_blank">
-            <img class="resources__logo" src="images/logo/resources-n1.svg" alt="N+1 лого">
-          </a>
-          <a href="https://strelkamag.com/ru" target="_blank">
-            <img class="resources__logo" src="images/logo/resources-strelka.svg" alt="Strelka лого">
-          </a>
-          <a href="https://polka.academy/" target="_blank">
-            <img class="resources__logo" src="images/logo/resources-polka.svg" alt="Полка лого">
-          </a>
-        </div>
+        <ul class="resources__logo-zone list">
+          <li>
+            <a href="https://arzamas.academy/" target="_blank" title="Арзамас">
+              <img class="resources__logo" src="images/logo/resources-arzamas.svg" alt="Arzamas лого">
+            </a>
+          </li>
+          <li>
+            <a href="https://nplus1.ru/" target="_blank" title="N+1">
+              <img class="resources__logo" src="images/logo/resources-n1.svg" alt="N+1 лого">
+            </a>
+          </li>
+            <a href="https://strelkamag.com/ru" target="_blank" title="Стрелка">
+              <img class="resources__logo" src="images/logo/resources-strelka.svg" alt="Strelka лого">
+            </a>
+          </li>
+          <li>
+            <a href="https://polka.academy/" target="_blank" title="Полка">
+              <img class="resources__logo" src="images/logo/resources-polka.svg" alt="Полка лого">
+            </a>
+          </li>
+        </ul>
       </section>
 
     </main>
